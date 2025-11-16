@@ -9,7 +9,7 @@ def preprocess_images(input_dir, output_dir, size=(299, 299)):
 
     for split in ["train", "val"]:
         in_path = os.path.join(input_dir, split)
-        out_path = os.path.join(output_dir, split)
+        out_path = os.path.join(output_dir, split) 
         os.makedirs(out_path, exist_ok=True)
 
         imgs = os.listdir(in_path)
